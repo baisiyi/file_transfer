@@ -30,7 +30,7 @@ func main() {
 		if err != nil {
 			c.JSON(http.StatusBadRequest, gin.H{"error": "No file is received"})
 			return
-		}_
+		}
 
 		// 生成唯一文件名
 		filename := uuid.New().String() + "_" + file.Filename
