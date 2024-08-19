@@ -5,7 +5,7 @@ WORKDIR /file_transfer
 RUN go mod tidy  \
     && make \
 
-COPY . .
+COPY file_transfer file_transfer
 
 RUN chmod +x file_transfer
 
